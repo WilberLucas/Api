@@ -8,7 +8,7 @@ module.exports = {
       filename: './database/db.sqlite',
     },
     migrations: {
-      directory: "./database/migrations"
+      directory: "./database/migrations",
     },
     useNullAsDefault: true,
     pool: {
@@ -21,16 +21,16 @@ module.exports = {
     },
   },
     production:{
-    client: 'pg',
+    client: "pg",
     connection:{
       connectionString: process.env.DATABASE_URL,
       ssl: {rejectUnauthorized: false},
     },
     migrations: {
-      directory: "./database/migrations"
+      directory: "./database/migrations",
     },
     seeds: {
-      directory: "./database/seeds"
+      directory: "./database/seeds",
     },
   },
 };
